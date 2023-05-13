@@ -1,19 +1,19 @@
 # this is my first python programme
-# cards values for each players
+# cards values for each player
 playerOne = [11, 3, 5, 8, 2, 9]
 playerTwo = [9, 4, 5, 18, 23, 9]
 
-# now we create the scores for each players
+# now we create the scores for each player
 playerOneScore = 0
 playerTwoScore = 0
 
 # Play seven rounds
-for playerOne, playerTwo in zip(playerOne,playerTwo):
+for playerOne, playerTwo in zip(playerOne, playerTwo):
     if playerOne > playerTwo:
         print(f"Player One wins with {playerOne} against {playerTwo}")
         playerOneScore = playerOneScore + 1
     elif playerTwo > playerOne:
-        print(f"Player two wins with{playerTwo} against {playerOne}")
+        print(f"Player Two wins with {playerTwo} against {playerOne}")
         playerTwoScore = playerTwoScore + 1
     else:
         print(f"It is a draw with {playerOne}")
@@ -25,4 +25,3 @@ elif playerTwoScore > playerOneScore:
     print("Player two wins the game ")
 else:
     print("The Game is a tie")
-
